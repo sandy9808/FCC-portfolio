@@ -157,7 +157,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25bab7', end
     display: block;
 }
 #welcome-section h5{
-    margin-bottom: 150px;
+    margin-bottom: 0px;
     text-align: center;
     font-size: xx-large;
     color: rgba(0,0,0,0.8);
@@ -196,7 +196,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25bab7', end
   display: block;
   transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
   margin-top: -10px;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 .photo:hover img{
@@ -233,6 +233,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25bab7', end
 .photo:hover img,
 .photo:hover .glow-wrap{
   margin-top: 0;
+  
 }
 #welcome-section h1{
   position: absolute;
@@ -320,6 +321,46 @@ footer > p {
 }
 @media screen and (max-width:472px){
     #welcome-section h5{
-        margin-bottom: 100px;
+        /* margin-bottom: 100px; */
     }
+}
+@media screen and (max-height:537px){
+    #welcome-section h1{
+    font-size: 3rem;
+    }
+}
+@media screen and (max-height:508px){
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }    
+    #welcome-section h1{
+    position: absolute;
+    z-index: 1;
+    transform: translate(-75%, -75%);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+    color: black;
+    }
+
+}
+@media screen and (max-height:378px){
+    .photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    #welcome-section h1{
+    position: absolute;
+    z-index: 1;
+    transform: translate(-75%, -75%);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+    color: black;
+    }
+
 }
